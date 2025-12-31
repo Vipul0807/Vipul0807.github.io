@@ -3,12 +3,13 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gallery</title>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <style>
        .desktop_2 * {
   font-family: Nunito, sans-serif;
-  margin-top: 0px;
+  margin-top: -5px;
   margin-right: 0px;
   margin-bottom: 0px;
   margin-left: 0px;
@@ -371,6 +372,46 @@
 
   .desktop_2 .overlay-inner {
     max-width: 90%;
+  }
+}
+
+/* Additional Mobile Optimizations */
+@media screen and (max-width: 480px) {
+  .desktop_2 .bigImg {
+    width: 200px;
+    height: 150px;
+  }
+
+  .desktop_2 .project {
+    width: 90px;
+  }
+
+  .desktop_2 .project-image {
+    width: 90px;
+    height: 90px;
+  }
+
+  .desktop_2 .Container {
+    width: 200px;
+  }
+
+  .desktop_2 .side {
+    width: 200px;
+  }
+
+  .desktop_2 .project-first {
+    width: 200px;
+  }
+
+  .desktop_2 .overlay-inner {
+    max-width: 95%;
+    padding: 15px;
+  }
+
+  .desktop_2 .close {
+    font-size: 12px;
+    top: 5px;
+    right: 10px;
   }
 }
     </style>
