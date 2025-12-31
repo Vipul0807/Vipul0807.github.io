@@ -84,3 +84,69 @@ img:last-child:nth-child(5) {
   text-shadow: 0 0 7px rgba(255, 255, 255, 0.3),
     0 0 3px rgba(255, 255, 255, 0.3);
 }
+
+/* Tablet Styles (768px - 1024px) */
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  .photography p {
+    height: 180px;
+    width: 90%;
+    max-width: 600px;
+    margin: 80px auto;
+  }
+
+  img {
+    height: 80px;
+  }
+
+  img:hover {
+    transform: scale(2.5);
+  }
+
+  .container {
+    font-size: 1.8rem;
+    height: 12vh;
+  }
+}
+
+/* Mobile Styles (max-width: 767px) */
+@media screen and (max-width: 767px) {
+  body {
+    overflow: auto !important;
+  }
+
+  .photography {
+    padding: 20px 0;
+  }
+
+  .photography p {
+    height: 120px;
+    width: 95%;
+    margin: 40px auto;
+  }
+
+  img {
+    height: 50px;
+  }
+
+  img:hover {
+    transform: scale(2.5);
+  }
+
+  .container {
+    font-size: 1rem;
+    height: auto;
+    min-height: auto;
+    flex-direction: column;
+    padding: 15px 10px;
+    gap: 10px;
+  }
+
+  /* Adjust offset paths for smaller screens */
+  img {
+    offset-path: path("m 0 35 q 35-20 70-20 t 70 20 70 0 70-20 70 20");
+  }
+
+  img:hover {
+    offset-path: path("m 2 45 q 30-0 60-0 t 60 0 60 0 60-0 60 0");
+  }
+}
